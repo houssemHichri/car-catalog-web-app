@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:ete": "cypress open"
+    "test:ete": "cypress run --spec \"cypress/integration/sample_spec.js\""
   },
   "eslintConfig": {
     "extends": "react-app"

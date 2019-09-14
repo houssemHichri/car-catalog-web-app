@@ -34,4 +34,4 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: yarn test:ete -- --record --spec "cypress/integration/sample_spec.js"
+      - run: npm run test:ete
