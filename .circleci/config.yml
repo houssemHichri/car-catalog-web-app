@@ -40,3 +40,10 @@ jobs:
       - run: 
           name: Build
           command: yarn build
+
+      - run:
+          name: Install netlify-cli
+          command: sudo npm install -g --silent netlify-cli
+      - run:
+          name: Deploy to Netlify
+          command: netlify deploy --dir=./public -p
