@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:ete": "cypress run --spec \"cypress/integration/sample_spec.js\""
+    "test:ete": "cypress run --spec \"cypress/integration/sample_spec.js\"",
+    "deploy": "netlify deploy --dir=./public -p"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^3.4.1"
+    "cypress": "^3.4.1",
+    "netlify-cli": "^2.15.0"
   }
 }
